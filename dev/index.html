@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct Primary Care Clinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+        <img id="logo-img" src="assets/img/tmp_olive_tree.png" />
+        <div>PROSPERITY HEALTH</div>
+    </div>
+    <nav class="nav" id="nav-menu">
+      <a href="#home" id="home-link" class="nav-link active" onclick="on_navigation_clicked('home')">Home</a>
+      <a href="#services" id="services-link" class="nav-link" onclick="on_navigation_clicked('services')">Services</a>
+      <a href="#pricing" id="pricing-link" class="nav-link" onclick="on_navigation_clicked('pricing')">Pricing</a>
+      <a href="#about" id="about-link" class="nav-link" onclick="on_navigation_clicked('about')">About</a>
+      <a href="#contact" id="contact-link" class="nav-link" onclick="on_navigation_clicked('contact')">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Content Container -->
+  <main id="content">
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <h1>Healthcare. Simplified.</h1>
+        <p>Personalized care without the insurance hassle. Affordable. Transparent. Human.</p>
+      </div>
+
+      <!-- Mission Statement -->
+      <section class="home-section">
+        <h2>Our Mission</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet sapien 
+          ac mauris tincidunt, ut malesuada nisl faucibus. Suspendisse potenti. 
+        </p>
+      </section>
+
+      <section class="mini-services">
+        <div class="grid">
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/stethoscope.svg" alt="Checkups" />
+            <h3>Checkups</h3>
+            <p>Routine visits to keep you feeling your best year-round.</p>
+          </div>
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/heart.svg" alt="Preventive Care" />
+            <h3>Preventive Care</h3>
+            <p>Proactive screenings and guidance to maintain lifelong wellness.</p>
+          </div>
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/chat.svg" alt="Consultations" />
+            <h3>Consultations</h3>
+            <p>Direct, unrushed conversations with your doctor — every time.</p>
+          </div>
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/meds.svg" alt="Prescriptions" />
+            <h3>Prescriptions</h3>
+            <p>Access affordable, at-cost medications with transparent pricing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="home-section overview">
+        <div>
+          <h3>What We Are</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, 
+            lorem a viverra aliquet, turpis sapien vulputate nulla, in dignissim 
+            eros justo vitae nisl.
+          </p>
+        </div>
+        <div>
+          <h3>Who It’s For</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+            Vivamus vehicula sapien ac nunc dignissim, a posuere mauris commodo.
+          </p>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="home-section testimonials">
+        <h2>What Our Patients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            <span>- Jane D.</span>
+          </div>
+          <div class="testimonial">
+            <p>"Aliquam eget sapien a urna luctus aliquam a nec sapien."</p>
+            <span>- Mark R.</span>
+          </div>
+          <div class="testimonial">
+            <p>"Curabitur vel libero nec urna varius dapibus ut in velit."</p>
+            <span>- Sarah L.</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Services Page -->
+<section id="services" class="page">
+      <h2>Our Services</h2>
+
+      <!-- Service Row 1 -->
+      <div class="service-row">
+        <img src="assets/icons/stethoscope.svg" alt="Checkups" />
+        <div class="service-text">
+          <h3>Checkups</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem vel
+            luctus tincidunt, risus elit malesuada libero, vel finibus sapien turpis ac augue.
+            Aliquam erat volutpat. Suspendisse suscipit, erat ut placerat convallis, tortor mi
+            cursus eros, nec laoreet augue libero id lorem.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 2 -->
+      <div class="service-row reverse">
+        <img src="assets/icons/heart.svg" alt="Preventive Care" />
+        <div class="service-text">
+          <h3>Preventive Care</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at cursus lacus,
+            ut condimentum justo. Duis maximus justo id felis tristique feugiat. Nam in rhoncus
+            mauris. Curabitur faucibus enim ut urna commodo, in egestas ipsum faucibus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 3 -->
+      <div class="service-row">
+        <img src="assets/icons/chat.svg" alt="Consultations" />
+        <div class="service-text">
+          <h3>Consultations</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus lectus magna,
+            ac feugiat tortor mattis ut. Fusce egestas ligula non sapien blandit convallis.
+            Suspendisse vel suscipit justo. Phasellus tristique lorem ut felis gravida sodales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 4 -->
+      <div class="service-row reverse">
+        <img src="assets/icons/meds.svg" alt="Prescriptions" />
+        <div class="service-text">
+          <h3>Prescriptions</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor metus id
+            justo aliquet, non faucibus turpis ullamcorper. Curabitur mattis orci ac diam
+            tincidunt, ac gravida enim sagittis. Vestibulum ante ipsum primis in faucibus orci
+            luctus et ultrices posuere cubilia curae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="page">
+      <h2>Transparent Pricing</h2>
+      <p>No insurance, no hidden fees. Just simple monthly plans.</p>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Individual</h3>
+          <p class="price">$75/month</p>
+          <p>Unlimited visits, prescriptions at-cost</p>
+        </div>
+        <div class="plan">
+          <h3>Family</h3>
+          <p class="price">$200/month</p>
+          <p>Coverage for the whole family</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Page -->
+    <section id="pricing" class="page">
+      <h2>Transparent Pricing</h2>
+      <p>No insurance, no hidden fees. Just simple monthly plans.</p>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Individual</h3>
+          <p class="price">$75/month</p>
+          <p>Unlimited visits, prescriptions at-cost</p>
+        </div>
+        <div class="plan">
+          <h3>Family</h3>
+          <p class="price">$200/month</p>
+          <p>Coverage for the whole family</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+      <h2>About Us</h2>
+      <p>
+        We’re a small clinic with a big mission: to bring back personal, transparent, and stress-free healthcare. 
+        Direct Primary Care means you get access to your doctor like never before — no insurance, no corporate barriers.
+      </p>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+      <h2>Get In Touch</h2>
+      <p>Email: hello@ProsperityHealth.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Address: 123 Main Street, YourTown, USA</p>
+    </section>
+
+    <!-- Error Page -->
+    <section id="error" class="page">
+        <h1>Not all who wander are lost... But you are!</h1>
+        <button onclick="on_navigation_clicked('home')">Wander Home</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 ProsperityHealth</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
