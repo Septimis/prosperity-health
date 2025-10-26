@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #333;
-  background: #fafafa;
+  background: #fffafa;
   line-height: 1.6;
 }
 
@@ -48,9 +48,18 @@ main {
   font-weight: bold;
   font-size: 1.2rem;
   display: flex;
+  cursor: pointer;
 }
 .logo div {
     margin: auto;
+}
+#logo-name {
+  color: #607883;
+}
+#catchphrase {
+  font-style: italic;
+  color: #caca39;
+  font-family: "Parisienne", cursive;
 }
 
 /* Navigation */
@@ -61,12 +70,13 @@ main {
 
 .nav a {
   text-decoration: none;
+  font-weight: bold;
   color: #555;
   transition: color 0.3s;
 }
 
 .nav a:hover, .nav a.active {
-  color: #008080;
+  color: #8d9b17;
 }
 
 /* Hamburger */
@@ -127,158 +137,6 @@ main {
   .hamburger {
     display: flex;
   }
-}
-
-/* Hero */
-.hero {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 4rem;
-  background: url('assets/img/home_background.jpg') no-repeat center center / cover;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 600px;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Home Sections */
-.home-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.mini-services .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin: 1rem 10% 0px 10%;
-}
-
-.mini-services .card {
-  background: #fff;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-.mini-services .card:hover {
-  background-color: #eee;
-  box-shadow: -5px 5px 10px #999;
-  cursor: pointer;
-}
-
-.mini-services .card img {
-  width: 40px;
-  margin-bottom: 0.75rem;
-}
-.overview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.testimonials .testimonial-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.testimonial {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-style: italic;
-}
-
-.testimonial span {
-  display: block;
-  margin-top: 0.5rem;
-  font-style: normal;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Grid for Services */
-/* Services Section (zigzag) */
-#services {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-#services h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.service-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding: 12px;
-}
-.service-row:hover {
-  box-shadow: 0px 0px 24px 8px #eee;
-  background-color: #fafafa;
-}
-
-.service-row img {
-  width: 20%;
-  border-radius: 1rem;
-  object-fit: cover;
-}
-
-.service-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.service-text {
-  flex: 1;
-}
-
-.service-text h3 {
-  margin-bottom: 0.5rem;
-  color: #008080;
-}
-
-.service-text p {
-  color: #555;
-}
-
-/* Pricing */
-.pricing {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-
-.plan {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  min-width: 200px;
-}
-
-.plan .price {
-  font-size: 1.5rem;
-  color: #008080;
-  margin: 0.5rem 0;
 }
 
 /* Footer */

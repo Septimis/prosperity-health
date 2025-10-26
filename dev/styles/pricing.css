@@ -1,0 +1,22 @@
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  min-width: 200px;
+}
+
+.plan .price {
+  font-size: 1.5rem;
+  color: #008080;
+  margin: 0.5rem 0;
+}

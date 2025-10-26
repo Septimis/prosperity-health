@@ -1,0 +1,45 @@
+/* Services Section (zigzag) */
+#services {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#services h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 12px;
+}
+.service-row:hover {
+  box-shadow: 0px 0px 24px 8px #eee;
+  background-color: #fafafa;
+}
+
+.service-row img {
+  width: 20%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  margin-bottom: 0.5rem;
+  color: #008080;
+}
+
+.service-text p {
+  color: #555;
+}

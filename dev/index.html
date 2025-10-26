@@ -4,14 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Direct Primary Care Clinic</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/services.css">
+  <link rel="stylesheet" href="styles/pricing.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">
+    <div class="logo" onclick="on_navigation_clicked('home')">
         <img id="logo-img" src="assets/img/tmp_olive_tree.png" />
-        <div>PROSPERITY HEALTH</div>
+        <div id="logo-txt">
+          <div id="logo-name">PROSPERITY HEALTH</div>
+          <div id="catchphrase">More than just medicine</div>
+        </div>
     </div>
     <nav class="nav" id="nav-menu">
       <a href="#home" id="home-link" class="nav-link active" onclick="on_navigation_clicked('home')">Home</a>
@@ -32,8 +48,8 @@
     <!-- Home Page -->
     <section id="home" class="page active">
       <div class="hero">
-        <h1>Healthcare. Simplified.</h1>
-        <p>Personalized care without the insurance hassle. Affordable. Transparent. Human.</p>
+        <h1>Prosperity Health</h1>
+        <p>More than just Medicine</p>
       </div>
 
       <!-- Mission Statement -->
@@ -59,13 +75,23 @@
           </div>
           <div class="card" onclick="on_navigation_clicked('services')">
             <img src="assets/icons/chat.svg" alt="Consultations" />
-            <h3>Consultations</h3>
+            <h3>Free Consultations</h3>
             <p>Direct, unrushed conversations with your doctor — every time.</p>
           </div>
           <div class="card" onclick="on_navigation_clicked('services')">
-            <img src="assets/icons/meds.svg" alt="Prescriptions" />
-            <h3>Prescriptions</h3>
-            <p>Access affordable, at-cost medications with transparent pricing.</p>
+            <img src="assets/icons/foot.svg" alt="Foot Zoning" />
+            <h3>Foot Zoning</h3>
+            <p>Promote relaxation, improve overall health, and balance the body's energies.</p>
+          </div>
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/coaching.svg" alt="Coaching" />
+            <h3>Healthcare Coaching</h3>
+            <p>Personalized, supportive empowerment to help you make sustainable change.</p>
+          </div>
+          <div class="card" onclick="on_navigation_clicked('services')">
+            <img src="assets/icons/employer_plans.svg" alt="Employer Plans" />
+            <h3>Employer Plans</h3>
+            <p>We ensure your greatest assets get the best medical care possible</p>
           </div>
         </div>
       </section>
@@ -157,7 +183,7 @@
       <div class="service-row reverse">
         <img src="assets/icons/meds.svg" alt="Prescriptions" />
         <div class="service-text">
-          <h3>Prescriptions</h3>
+          <h3>Foot Zoning</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor metus id
             justo aliquet, non faucibus turpis ullamcorper. Curabitur mattis orci ac diam
