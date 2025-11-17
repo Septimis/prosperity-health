@@ -36,6 +36,13 @@
   margin: 0 auto;
 }
 
+.home-section h2 { margin-left: 14px; }
+
+.home-section p {
+  border-left: 8px solid #607883;
+  padding-left: 6px;
+}
+
 .mini-services .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
