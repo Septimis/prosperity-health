@@ -15,6 +15,7 @@
   font-family: 'Zalando Sans Expanded', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #c5ae78;
 }
 
 .hero p {
@@ -24,9 +25,12 @@
   font-family: 'Zalando Sans Expanded', serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #fffafa58;
+  color: #c5ae78;
+
+  /* Backdrop */
+  /* background-color: #fffafa58;
   border-radius: 8px;
-  box-shadow: 0px 0px 12px 16px #fffafa58;
+  box-shadow: 0px 0px 12px 16px #fffafa58; */
 }
 
 /* Home Sections */
