@@ -12,7 +12,7 @@
 .hero h1 {
   font-size: 70px;
   margin-bottom: 1rem;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Zalando Sans Expanded', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -21,7 +21,7 @@
   max-width: 600px;
   font-size: 40px;
   color: #3f3f3f;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Zalando Sans Expanded', serif;
   font-weight: 400;
   font-style: normal;
   background-color: #fffafa58;
