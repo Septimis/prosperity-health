@@ -27,6 +27,20 @@ main {
   flex: 1; /* Push footer down */
 }
 
+.call-to-action {
+  border: 4px solid #607883;
+  border-radius: 8px;
+  padding: 8px 32px;
+  background-color: #fffafa;
+  color: black;
+  font-weight: bold;
+}
+.call-to-action:hover {
+  cursor: pointer;
+  background-color: #607883;
+  color: white;
+}
+
 /* Header */
 .header {
   position: sticky;

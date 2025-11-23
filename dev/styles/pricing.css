@@ -1,22 +1,48 @@
-.pricing {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
+#pricing {
+    padding: 0px 20%;
 }
 
-.plan {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  min-width: 200px;
+.insurance-source-wrapper {
+    text-align: center;
+    border: 4px solid #607883;
+    border-radius: 8px;
+    position: relative;
+    margin: 64px 0px;
+}
+.insurance-source-wrapper h2 {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fffafa;
+    padding: 0px 16px;
 }
 
-.plan .price {
-  font-size: 1.5rem;
-  color: #008080;
-  margin: 0.5rem 0;
+.coverage-tiers {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 32px;
+    flex-wrap: wrap;
+    gap: 32px
+}
+
+.pricing-plan {
+    box-shadow: 0px 0px 12px 2px #607883;
+    border-radius: 8px;
+    padding: 12px 32px;
+}
+
+.pricing-plan button {
+    margin: 16px;
+}
+
+.benefactor-col {
+    text-align: left;
+    padding-left: 8px;
+}
+.result-row { border-top: 2px solid black; }
+.time-increment-col { text-align: left; }
+
+@media (max-width: 768px) {
+    #pricing { padding: none; }
 }
