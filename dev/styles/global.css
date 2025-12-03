@@ -20,7 +20,6 @@ body {
   flex-direction: column;
   color: #333;
   background: #fffafa;
-  line-height: 1.6;
 }
 
 main {
@@ -72,7 +71,7 @@ main {
 }
 #catchphrase {
   font-style: italic;
-  color: #f1e3c9;
+  color: #c5ae78;
   font-family: "Parisienne", cursive;
 }
 
