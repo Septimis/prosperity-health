@@ -41,10 +41,13 @@ button:hover {
     border: 6px solid var(--secondary);
 }
 
+hr {
+    width: 70%;
+    margin: auto;
+}
+
 #hero {
     margin: 16px 0px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
     padding-bottom: 16px;
     justify-content: center;
     align-items: center;
@@ -83,8 +86,19 @@ button:hover {
     max-width: 400px;
 }
 
+#want-or-need-more {
+    margin-top: 32px;
+    padding: 0px 30%;
+}
+#want-or-need-more h2 {
+    text-align: center;
+}
+#want-or-need-more li {
+    margin-left: 64px;
+}
+#want-or-need-more a { margin: 16px auto;}
+
 #plans-pricing {
-    border-top: 2px solid black;
     padding-top: 64px;
 }
 #plans-pricing h2, #plans-pricing p, #plans-pricing a {
@@ -104,8 +118,7 @@ button:hover {
 }
 
 #questions {
-    border-top: 2px solid black;
-    padding-top: 32px;
+    padding: 32px;
 }
 #questions h2, #questions p, #questions a {
     text-align: center;
@@ -115,30 +128,27 @@ button:hover {
 }
 
 #meet-provider {
-    border-top: 2px solid black;
-    padding: 32px 0px;
+    padding: 32px 30vw;
     justify-content: center;
 }
 #meet-provider img {
-    width: 30vw;
-    max-width: 600px;
-    min-width: 260px;
+    float: left;
+    width: 200px;
     height: auto;
-    margin: auto;
+    margin: 0 20px 20px 0px;
 }
-#meet-provider h2, #meet-provider h3, #meet-provider a {
+#meet-provider h2, #meet-provider a {
     text-align: center;
 }
 #meet-provider p {
     width: 40vw;
     margin: auto;
 }
-#meet-provider h3, #meet-provider button {
+#meet-provider button {
     margin-top: 32px;
 }
 
 #kind-of-care {
-    border-top: 2px solid black;
     padding: 32px 0px;
     text-align: center;
 }
@@ -149,7 +159,6 @@ button:hover {
 }
 
 #wrap-up {
-    border-top: 2px solid black;
     padding-top: 32px;
     text-align: center;
 }
