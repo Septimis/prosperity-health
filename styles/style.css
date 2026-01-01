@@ -60,7 +60,7 @@ hr {
 }
 #hero h1 {
     color: var(--primary);
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Zalando Sans Expanded", sans-serif;
 }
 #logo {
