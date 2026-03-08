@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+:root {
+    --primary: #758591;
+    --secondary: #948a62;
+}
+
+/* Layout */
+html, body {
+  height: 100%;
+}
+
+.row, .col { display: flex; }
+.row { flex-direction: row; }
+.col { flex-direction: column; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  background: white;
+}
+
+button {
+    border: 6px solid transparent;
+    border-radius: 8px;
+    padding: 16px 32px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1rem;
+}
+button:hover {
+    color: var(--secondary);
+    background-color: white;
+    border: 6px solid var(--secondary);
+}
+
+hr {
+    width: 70%;
+    margin: 32px auto;
+}
+
+#hero {
+    margin: 16px 0px;
+    padding-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero img {
+    width: 30vw;
+    min-width: 248px;
+    height: auto;
+}
+#hero h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+#logo {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+#headline {
+    margin: 16px;
+}
+
+#why-direct-care h2 {
+    text-align: center;
+}
+#why-direct-care table {
+    margin: auto;
+}
+.wdc-head {
+    font-weight: 600;
+    font-size: 18px;
+}
+.wdc-body {
+    padding: 16px;
+    padding-right: 0px;
+    max-width: 400px;
+}
+
+#want-or-need-more {
+    margin-top: 32px;
+    padding: 0px 30%;
+}
+#want-or-need-more h2 {
+    text-align: center;
+}
+#want-or-need-more li {
+    margin-left: 64px;
+}
+#want-or-need-more a { margin: 16px auto;}
+
+#plans-pricing {
+    padding-top: 64px;
+}
+#plans-pricing h2, #plans-pricing p, #plans-pricing a {
+    text-align: center;
+}
+#plans-pricing table, #plans-pricing button {
+    margin: 32px auto;
+}
+
+#plans-pricing {
+    padding-top: 16px;
+}
+.pp-body {
+    padding: 8px 0px 8px 128px;
+    max-width: 400px;
+}
+
+#questions {
+    padding: 32px;
+}
+#questions h2, #questions p, #questions a {
+    text-align: center;
+}
+#questions p {
+    margin: 16px;
+}
+
+#meet-provider {
+    padding: 32px 30vw;
+    justify-content: center;
+}
+#meet-provider img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 0 20px 20px 0px;
+}
+#meet-provider h2, #meet-provider a {
+    text-align: center;
+}
+#meet-provider p {
+    width: 40vw;
+    margin: auto;
+    margin: 16px 0px;
+}
+#meet-provider button {
+    margin-top: 32px;
+}
+
+#kind-of-care {
+    padding: 32px 0px;
+    text-align: center;
+}
+#kind-of-care ul {
+    text-align: left;
+    width: fit-content;
+    margin: 32px auto;
+}
+
+#wrap-up {
+    padding: 32px 20%;
+    text-align: center;
+}
+#wrap-up p { font-size: 1.4em; }
+#wrap-up button { 
+    margin-top: 16px;
+}
+
+#contact-us {
+    width: 250px;
+    margin: 64px auto;
+    text-align: center;
+}
+#contact-us input {
+    margin: 4px;
+}
+#contact-us input[type="submit"] {
+    width: fit-content;
+    padding: 16px;
+    margin: 16px auto;
+}
+
+#footer {
+    min-height: 32px;
+    width: 100vw;
+    justify-content: center;
+}
+#footer div {
+    justify-content: space-evenly;
+    width: 100vw;
+}
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+         <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <title>Prosperity Health</title>
+    </head>
+    <body>
+        <div id="hero" class="col">
+            <img src="assets/img/olive_tree.svg" alt="olive_tree" />
+            <p id="headline">Skip the insurance hurdles. Get direct access to care that’s simple, affordable, and built around you - a Direct Primary Care approach</p>
+            <a href="#plans-pricing"><button>Learn about <strong>Memberships</strong></button></a>
+        </div>
+
+        <hr>
+
+        <div id="why-direct-care">
+            <h2>Why Direct Care?</h2>
+            <table>
+                <tr>
+                    <td class="wdc-head">Transparent & Affordable</td>
+                    <td class="wdc-body">Know what you’ll pay upfront, no surprise bills or insurance games.</td>
+                </tr>
+
+                <tr>
+                    <td class="wdc-head">Time With Your Provider</td>
+                    <td class="wdc-body">Longer, unrushed visits. Real conversations. Real care.</td>
+                </tr>
+
+                <tr>
+                    <td class="wdc-head">Preventive + Everyday Care</td>
+                    <td class="wdc-body">Routine check-ups, chronic-care management, mental-health support, urgent needs — all under one roof.</td>
+                </tr>
+
+                <tr>
+                    <td class="wdc-head">Freedom & Flexibility</td>
+                    <td class="wdc-body">Use monthly plans, employer plans, or one-time visits depending on your needs.</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <div id="plans-pricing" class="col">
+            <h2>Plans & Pricing</h2>
+            <h4 style="text-align: center;">Monthly Membership</h4>
+            <table>
+                <tr>
+                    <th>Plan Type</th>
+                    <th class="pp-body">Price / Month*</th>
+                </tr>
+
+                <tr>
+                    <td>Individual</td>
+                    <td class="pp-body">$110/month</td>
+                </tr>
+
+                <tr>
+                    <td>Couple</td>
+                    <td class="pp-body">$180/month</td>
+                </tr>
+
+                <tr>
+                    <td>Family</td>
+                    <td class="pp-body">$250/month</td>
+                </tr>
+            </table>
+            <p>*Plus one-time enrollment fee depending on the plan (see details on sign-up page)</p>
+            <a href="https://prosperityhealth.hint.com/signup/membership"><button>Pre-Enroll Now</button></a>
+
+
+        </div>
+
+        <hr>
+
+        <div id="kind-of-care" class="col">
+            <h2>What kind of care you can get</h2>
+            <ul>
+                <li>Increased access to the SAME provider, all the time, EVERY time</li>
+                <li>Annual check-ups & wellness exams, Sport Physical Exams</li>
+                <li>Chronic illness management: diabetes, hypertension, thyroid, etc.</li>
+                <li>Mental-health support: anxiety, depression, ADHD, etc.</li>
+                <li>Skin & dermatology issues: acne, wart/skin-tag removal, toenail removal, etc.</li>
+                <li>Weight-loss, Hormone replacement & general wellness</li>
+                <li>Preventive care, labs/referrals, medication management</li>
+                <li>Health navigation to specialists and coordinating care</li>
+                <li>Same or Next day appointments, as often as you need or would like</li>
+                <li>Quick response time to texts/emails or calls</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="col" style="text-align: center; padding: 0px 20%">
+            <p style="font-size: 1.2em; margin-bottom: 16px;">And — when needed — one-time urgent consultations or care without long-term commitment.</p>
+            <h2>One-time Visit</h2>
+            <span style="text-align: center; font-size: 12px; margin-bottom: 12px;">(Urgent/Telemed Care)</span>
+
+            <table style="margin-bottom: 16px; text-align: left; width: 400px; margin: auto;">
+                <tr>
+                    <td>Urgent/Telemed Care</td>
+                    <td style="padding: 16px">Only $70</td>
+                </tr>
+
+                <tr>
+                    <td>In-Person/House Call Visit</td>
+                    <td style="padding: 16px">Only $120</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">Yes, I can come to you!</td>
+                </tr>
+            </table>
+            <a href="https://prosperityhealth.hint.com/signup/membership" style="margin-top: 16px;"><button>Telemed Care Visit</button></a>
+
+        </div>
+
+        <hr>
+
+        <div id="want-or-need-more" class="col">
+            <h2 style="font-size: 2em;">Want or need More?</h2>
+            <h2 style="margin-bottom: 16px;">Medical Coverage WITHOUT Insurance</h2>
+
+            <p style="margin-bottom: 16px;">With Prosperity Health, we not only provide Medical <strong>Care</strong>, but we offer <strong>Coverage</strong>.</p>
+
+            <p>We hope you never need it, but feel at peace with reliable coverage:</p>
+            <ul style="margin: 16px 0px;">
+                <li>New and improved coverage from a locally owned Health Savings Share (HSA) </li>
+                <li>Fast & Reliable reimbursements </li>
+                <li>Save money and invest it in YOUR individual HSA, rather than increasing outrageous insurance premiums and deductibles</li>
+                <li>Spend your own money WHEN you need it </li>
+                <li>Medical decisions not dictated by insurance</li>
+            </ul>
+            <p>Find out more: Book a call to find out more if it is right for you and your family.</p>
+            <a href="https://prosperityhealth.hint.com/booking"><button>Meet & Greet With Graham</button></a>
+        </div>
+
+        <hr>
+
+        <div id="meet-provider">
+            <h2 style="margin-bottom: 32px;">Meet your provider</h2>
+            <img src="assets/img/graham.png" alt="graham">
+            <h3 style="font-size: 1.4em;">Graham Burdett, PA-C</h3>
+            <p>Nearly 20 years of experience in the medical field, started off with a Master of Medical Science from Yale University and a B.S. in Psychology from Brigham Young University, Graham draws on deep medical training — and real human empathy.</p>
+            <p>He brings years of experience from urgent care, trauma care, orthopedics and general surgery background — and currently serves with the Utah Air National Guard for over a decade.</p>
+            <p>But what really drives him is <strong>relationship-based</strong> care:  Having served an ecclesiastical mission in 4 different countries, he came to learn and appreciate the importance of humanity and found a common thread in all ethnicities for personnel connection.  This kept him yearning to find his passion in serving others and discovering their true needs.</p>
+            <p>As a father of 5 children, ranging from elementary age to young adults, he understands the dynamics and nuances of family life.  He knows how busy and expensive family life can be.</p>
+            <p>He listens to what you need, understanding your life challenges and tailors personal care for you. Whether it’s basic common medical concerns,  chronic-disease management, preventive care, skin issues, hormone wellness, mental-health support — he’s in for the long haul.</p>
+            <p>And the best part: He can come to you!  Find out more</p>
+
+            <div style="text-align: center; width: 100%;">
+                <a href="https://prosperityhealth.hint.com/booking"><button>Meet & Greet</button></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="questions" class="col"">
+            <h2>Do You Have Questions?</h2>
+            <p>We get it - Health Care is complicated</p>
+            <p>👉 Have Questions? We’ve got answers.</p>
+            <p>Let’s chat. Schedule a quick <strong>Meet & Greet</strong> with our provider to see if this is the right fit for you.</p>
+            <a href="https://prosperityhealth.hint.com/booking"><button>Book a Call - Meet & Greet With Graham</button></a>
+        </div>
+
+        <hr>
+
+        <div id="wrap-up" class="col">
+            <p>Join a smarter, simpler way to take care of your health. No insurance games. No overpriced surprise bills. Just real care, when you need it — from someone who listens.</p>
+
+            <p style="margin-top: 16px;">That's what DPC is. And that's what Prosperity Health is all about!</p>
+        </div>
+
+        <hr>
+
+        <form id="contact-us" class="col" action="https://formspree.io/f/mykzklvn" method="POST">
+            <h2>Contact Us</h2>
+            <input type="text" name="name-field" placeholder="Name" />
+            <input type="email" name="email-field" placeholder="Email" />
+            <input type="tel" name="phone-field" placeholder="Phone" />
+            <textarea name="comments" rows="5" cols="50" placeholder="Comments"></textarea>
+            <input type="submit" name="submit-btn" />
+
+        </form>
+
+        <div id="footer" class="col">
+            <img src="assets/img/olive_tree.svg" alt="logo" style="width: 64px; height: auto; margin: auto;">
+
+            <div class="row">
+                <span>Prosperity Health, LLC</span>
+                <span>Phone/Text: (385) 367-2794</span>
+                <span>Email: graham@prosperity-health.com</span>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        // Handle navigation without page reload
+const links = document.querySelectorAll('.nav-link');
+const pages = document.querySelectorAll('.page');
+const navMenu = document.getElementById('nav-menu');
+const hamburger = document.getElementById('hamburger');
+
+function on_navigation_clicked(page_to_load) {
+  links.forEach(l => l.classList.remove('active'));
+  pages.forEach(p => p.classList.remove('active'));
+
+  try
+  {
+    document.getElementById(`${page_to_load}-link`).classList.add('active');
+    document.getElementById(`${page_to_load}`).classList.add('active');
+
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    navMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+  }
+  catch(error)
+  {
+    document.getElementById('error').classList.add('active');
+    console.error(`Expected to navigate to ${page_to_load}. But could not find it.\n${error}`);
+  }
+}
+
+// Mobile menu toggle
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+  hamburger.classList.toggle('open');
+});
+    </script>
+</html>
